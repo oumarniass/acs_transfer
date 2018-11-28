@@ -9,11 +9,11 @@ if (!empty($_FILES)) {
     $_SESSION['fichier'] = $file_name;
 
 
-    if(move_uploaded_file($file_tmp_name, $file_dest)) {
+   /* if(move_uploaded_file($file_tmp_name, $file_dest)) {
         $requete = $bdd->prepare('INSERT INTO file(name, file_url) VALUES(?,?)');
         $requete->execute(array($file_name, $file_dest));
 
-    }
+    }*/
 
 }
 
@@ -65,19 +65,11 @@ if($error == '')
 }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <title>ACS Transfer</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- mes ajout -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- mes ajout FIN-->
+
 </head>
 <body>
 <div id="particles-js"></div>

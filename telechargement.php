@@ -16,11 +16,11 @@ $_SESSION['fichier'];
     <title>Document</title>
 </head>
 <body style="background-color: #27b387;">
-    <div class="jumbotron" style="background: rgba(0, 0, 0, 0.4) !important; margin-left: 100px !important; margin-right: 100px !important; margin-top: 100px !important; padding: 0rem 2rem !important;">
+    <div class="" style="background: rgba(0, 0, 0, 0.4) !important; margin-left: 100px !important; margin-right: 100px !important; margin-top: 100px !important; padding: 0rem 2rem !important;">
         <div class="container">
             <header class="page-header">
                 <div class="wrapper">
-                    <img src="img/logo.png" alt="" style="height: 100px; margin-left: -121px !important; margin-top: 15px !important;"/>
+                    <img src="img/logo.png" alt="" style="height: 100px; margin-left: -121px !important; margin-top: 15px !important;" class="row"/>
                 </div>
             </header>
         </div>

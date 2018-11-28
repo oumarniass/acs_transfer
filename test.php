@@ -1,34 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background-color: #27b387;">
+<div class="" style="background: rgba(0, 0, 0, 0.4) !important; margin-left: 100px !important; margin-right: 100px !important; margin-top: 100px !important; padding: 0rem 2rem !important;">
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="email" name="email" id="">
+        <input type="text" name="name" id="">
+        <input type="submit" value="envoyer" name="name" id="">
+    </form>
+</div>
+
+
+</body>
+</html>
+
 <?php
-//require '/usr/share/php/libphp-phpmailer/class.phpmailer.php';
-//require '/usr/share/php/libphp-phpmailer/class.smtp.php';
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+session_start();
 
-require 'path/to/PHPMailer/src/Exception.php';
-require 'path/to/PHPMailer/src/PHPMailer.php';
-require 'path/to/PHPMailer/src/SMTP.php';
-$mail = new PHPMailer;
-$mail->setFrom('admin@example.com');
-$mail->addAddress('oumarsow92bbsy@gmail.com');
-$mail->Subject = 'Message sent by PHPMailer';
-$mail->Body = 'Hello! use PHPMailer to send email using PHP';
-$mail->IsSMTP();
-$mail->SMTPSecure = 'ssl';
-$mail->Host = 'ssl://smtp.gmail.com';
-$mail->SMTPAuth = true;
-$mail->Port = 465;
-
-//Set your existing gmail address as user name
-$mail->Username = 'oumarsow92bbsy@gmail.com';
-
-
-//Set the password of your gmail address here
-$mail->Password = 'oumarsow83bbsy';
-if(!$mail->send()) {
-    echo 'Email is not sent.';
-    echo 'Email error: ' . $mail->ErrorInfo;
-} else {
-    echo 'Email has been sent.';
-}
 ?>
-<a href=""></a>

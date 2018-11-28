@@ -1,8 +1,8 @@
 <?php
 //Connexion a la base de donnees
-try
+/*try
 {
-    $bdd=new PDO('mysql:host=localhost;dbname=project_file','root','oumarsow');
+    $bdd=new PDO('mysql:host=localhost;dbname=project_fi','id6841784_oumarsow','oumarsow');
 }
 catch(Exception $e)
 {
